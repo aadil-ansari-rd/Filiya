@@ -2,7 +2,7 @@
 
 **Filiya** is a full-featured restaurant web application developed using the **MERN stack**. It consists of an admin dashboard, user frontend, and backend APIs. The platform supports menu browsing, table booking, order placement, payment via Stripe, and more.
 
-## 🗂️ Project Structure
+# 🗂️ Project Structure
 
 ```
 filiya/
