@@ -1,0 +1,50 @@
+.receipe-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 1.5em;
+}
+.receipe-card {
+  // background-color: #04aa6d;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px var(--shadow-color);
+  .receipe-card-info {
+    padding: 15px;
+  }
+  // .custom-image {
+  //   z-index: -1; // used to show chef image on upper.
+  // }
+  
+  // -----------------------------------------
+  // chef card images in menu section.
+  // .chef-img {
+  //   height: 60px;
+  //   width: 60px;
+  //   border-radius: 50px; // used to crop the chef image
+  //   border: 3px solid var(--background-light);
+  //   box-shadow: 0 1px 3px var(--shadow-color); // outline circle chef image
+  //   margin-top: -50px;
+  //   z-index: 2;
+  // }
+
+  .receipe-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: var(--text-color);
+    margin-top: 0.25em;
+  }
+  .receipe-description {
+    color: var(--text-color);
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .view-button {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 0.75em;
+    display: inline-block; // view button margin-top
+  }
+}

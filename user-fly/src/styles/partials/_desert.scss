@@ -1,0 +1,31 @@
+// food desert details
+.section.food-desert {
+  .col.img {
+    img {
+      width: 100%;
+    }
+  }
+  .col.typograph {
+    padding-left: 1em;
+    .desert-item {
+      border-left: 0.2em solid #04aa6d;
+      margin-bottom: 0.5em;
+      padding-left: 0.5em;
+      padding: 0.1em 0 0.2em 0.5em;
+      color: var(--text-light);
+      font-weight: bold;
+      transform: translateX(100%);
+      opacity: 0;
+      animation: getAnimationDuration(0.4s) slideInRight forwards; // desert name slide in right animation
+      // for loop using one by one animation in desert names.
+      @for $i from 2 through 7 {
+        &:nth-child(#{$i}) {
+          animation-delay: #{$i * 0.1}s;
+        }
+      }
+    }
+    .btn {
+      margin-top: 0.75em;
+    }
+  }
+}

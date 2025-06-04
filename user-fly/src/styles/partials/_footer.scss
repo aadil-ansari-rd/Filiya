@@ -1,0 +1,20 @@
+.footer {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding-block: 3em; // margin between top and bottom and help to center the text.
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; // divide 3 section in footer.
+  grid-gap: 1em;
+  .footer-section {
+    p {
+      opacity: 0.9; //opacity of footer text.
+      margin-bottom: 0.5em;
+    }
+    p.footer-title {
+      opacity: 1; //opacity of footer heading.
+      font-size: 1.1em;
+      // font-weight: bold;
+      margin-bottom: 1em;
+    }
+  }
+}

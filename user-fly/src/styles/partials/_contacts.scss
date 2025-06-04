@@ -1,0 +1,62 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+form {
+  max-width: 600px;
+  width: 90%;
+  background: #ddd;
+  padding: 25px 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+  margin: 25px;
+}
+
+form h2{
+  text-align: center;
+}
+
+label.text-control {
+  margin-left: 2.7em;
+  font-size: 17px;
+}
+
+form .input-box {
+  margin-top: 20px;
+}
+.input-box .field {
+  width: 80%;
+  height: 50px;
+  background: border-box #fff;
+  border: 2px solid gray;
+  outline: none;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 17px;
+  color: #333;
+  margin-top: 10px;
+  margin-left: 2.7em;
+}
+
+.input-box .field.message {
+  height: 20vh;
+  resize: none;
+}
+
+form button {
+  width: 80%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5em;
+  margin-left: 2.7em;
+  transition: .5s;
+}
+
+form button:hover{
+  background-color: rgb(223, 21, 88);
+}

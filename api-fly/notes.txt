@@ -1,0 +1,9 @@
+npm init -y
+npm i body-parser
+npm i cloudinary
+npm i cors
+npm i express
+npm i bcrypt
+npm i mongoose
+npm i mongoose-timestamps
+npm i multer

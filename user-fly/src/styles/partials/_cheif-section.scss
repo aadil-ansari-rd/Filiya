@@ -1,0 +1,63 @@
+.section.cheifs {
+  display: block;
+}
+.top-cheifs-container {
+  display: grid; // divide images into 2*3 matrix.
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); // divided images into 6 similar sizes.
+  grid-gap: 1.5em; // gap between images.
+  margin-top: 2.2em;
+}
+
+// all cheifs cards
+.cheif-card {
+  display: flex;
+  height: 120px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  overflow: hidden;
+  // all cheif images.
+  img {
+    height: 100%;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px var(--shadow-color);
+  }
+  .cheif-card-info {
+    height: 100%;
+    // background-color: #04aa6d;
+    display: flex;
+    flex-direction: column; // cheif details one by one
+    justify-content: space-between; // space between cheif details
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    .cheif-card-name {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: var(--text-color);
+    }
+    .cheif-receipe-count,
+    .cheif-country {
+      font-size: 1em;
+      color: var(--text-light);
+    }
+    .Cheif-icons {
+      font-size: 1.2em;
+      svg {
+        margin-right: 0.3em;
+        &:nth-child(1) {
+          color: #0063f7;
+        }
+        &:nth-child(2) {
+          color: #13b4ff;
+        }
+        &:nth-child(3) {
+          color: #ff0056;
+        }
+      }
+    }
+  }
+}
